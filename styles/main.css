@@ -65,19 +65,19 @@ ul {
 /*Form*/
 
 .form {
-    margin: auto;
+    max-width: 585px;
+    margin: auto
+}
+
+.form .input {
     display: flex;
+    position: relative;
     align-items: center;
     height: 44px;
-    width: 585px;
+    width: 100%;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     padding: 5px, 8px, 0, 16px;
-}
-
-.input {
-    height: 100%;
-    flex: 1;
 }
 
 .input:hover {
