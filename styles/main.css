@@ -1,6 +1,7 @@
 #container {
     font-family: Arial, Helvetica, sans-serif;
     margin: 30px auto;
+    font-size: 14px;
 }
 
 
@@ -28,7 +29,8 @@ ul {
 
 #nav ul li a {
     display: block;
-    color: black;
+    color: #5F6368;
+    font-family: Arial, sans-serif;
     text-align: center;
     text-decoration: none;
 }
@@ -56,21 +58,43 @@ ul {
 
 #main_input {
     margin-top: 30px;
+    position: relative;
 }
+
+
+/*Form*/
 
 .form {
     margin: auto;
+    display: flex;
+    align-items: center;
     height: 44px;
-    width: 600px;
+    width: 585px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     padding: 5px, 8px, 0, 16px;
-    align-items: center;
 }
 
 .input {
     height: 100%;
     flex: 1;
+}
+
+.input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.input .search {
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin-top: -5px;
+    margin-right: 7px;
+}
+
+.input img {
+    border-radius: 50%;
 }
 
 input {
@@ -86,12 +110,48 @@ input:focus {
     outline: none
 }
 
+
+/*Submit*/
+
+.main_submit {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main_submit button {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 9px 3px;
+    padding: 0 16px;
+    height: 37px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_submit button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0, 8);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+
+/*Footer*/
+
 #footer {
     position: fixed;
     left: 0;
     bottom: 0;
     border-top: 1px solid #c1c4ca;
     width: 100%;
+}
+
+#footer ul {
+    padding: 4px 30px 4px 18px
 }
 
 #footer li {
@@ -102,7 +162,8 @@ input:focus {
 #footer li a {
     display: block;
     padding: 8px;
-    color: black;
+    color: #5F6368;
+    font-family: Arial, sans-serif;
     text-decoration: none;
 }
 
