@@ -1,3 +1,11 @@
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px auto;
+}
+
+
+/*Navigation*/
+
 ul {
     padding: 0
 }
@@ -14,7 +22,6 @@ ul {
 #nav ul li {
     display: inline;
     padding-right: 20px;
-    margin: auto;
 }
 
 #nav ul li a {
@@ -26,9 +33,21 @@ ul {
     border-radius: 50%;
     display: inline-block;
     background-position: center;
-    margin: auto;
 }
 
 #nav ul li a:hover {
     text-decoration: underline;
+}
+
+
+/*Google logo*/
+
+#main {
+    text-align: center;
+    margin-top: 60px;
+    flex: 1;
+}
+
+#main .logo {
+    padding-top: 109px;
 }
